@@ -1,0 +1,676 @@
+/* defining variable globally and it is also an pesudo class */
+:root{
+	--mainTheme: #905126;
+	--brown: #b4622a;
+	--white: #fff;
+	--black: #000;
+	--comment: #888;
+	--orange: #FF5733;
+	--green: #138808;
+}
+
+::selection{ /* using pesudo element */
+	background-color: var(--mainTheme);
+	color: var(--white);
+}
+
+body{
+	background: var(--black);
+	color: var(--white);
+}
+
+/* main logo */
+.main-logo img{
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+	width: 10%;
+	height: auto;
+}
+
+/* Navbar */
+.navbar{
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	height: auto;
+	z-index: 4; /* it is important otherwise every img will overlap and it is 4 due to overlap in demo session */
+	box-shadow: 0px 15px 20px var(--black);
+	position: sticky;
+	top: 0px;
+	overflow: hidden;
+	background: var(--white);
+}
+
+.navbar .logo{
+	padding-top: 0px;
+	padding-left: 20px;
+	box-sizing: border-box;
+}
+
+.navbar li,a{
+	color: var(--black);
+	font-weight: 600;
+	text-decoration: none;
+	margin-right: 5px;
+	margin-left: 5px;
+	margin-top: 10px;
+	display: inline-block;
+}
+
+.navbar .logo a{
+	font-size: 30px;
+	font-variant: small-caps;
+}
+
+.navbar .logo i{
+	color: var(--mainTheme); /* defineing locally or using var() function to declare color */
+}
+
+.navbar a{
+	transition: all 0.5s ease-in-out;
+}
+.navbar a:hover{ /* using pesudo class :hover */
+	color: var(--mainTheme);
+}
+
+.navbar i{
+	position: relative;
+	top: -20px;
+	left: -5px;
+	font-size: 23px;
+	transform: rotate(20deg);
+}
+
+/* Intro Section */
+.intro{
+	width: 100%;
+	height: 100vh;
+}
+
+.intro .center{
+	position: absolute;
+	color: var(--black);
+	left: 10%;
+	top: 80%;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 5px;
+    padding: 20px;
+    font-weight: bold;
+    box-shadow: 4px 8px 12px var(--black);
+}
+
+.intro span{
+	font-variant: small-caps;
+}
+
+.intro p{
+	font-style: italic;
+}
+
+/* Social menu */
+.social-menu ul{
+	position: fixed;
+	margin-left: 0px;
+	padding-left: 0px;
+	top: 40%;
+	left: 0px;
+	background: var(--mainTheme);
+}
+
+.social-menu li{
+	font-size: 20px;
+	display: block;
+	padding: 8px;
+	left: 0;
+	width: auto;
+	text-align: center;
+}
+
+.social-menu ul span{
+  content: '';
+  border: 1px solid var(--white);
+  width: 100%;
+  font-size: 3px;
+  display: block;
+  margin: 1px auto;
+}
+
+.social-menu a{
+	text-decoration: none;
+	margin: 0px;
+	transition: 0.5s ease-in-out;
+}
+
+.social-menu a:hover{
+	color: var(--white);
+}
+
+/* About Us */
+.about{
+	width: auto;
+	height: 100vh;
+	padding-top: 60px;
+}
+
+.about h1{
+	padding: 25px;
+	padding-bottom: 0px;
+	text-align: center;
+	font-family: serif;
+	font-weight: 600;
+	letter-spacing: 3px;
+	font-size: 33px;
+}
+
+.about #heading.underline{
+  content: '';
+  border: 1px solid var(--white);
+  width: 15%;
+  font-size: 3px;
+  display: block;
+  margin: 0px auto;
+}
+
+.about .underline2{
+  content: '';
+  border: 1px solid var(--brown); /* defineing Brown color using var() function */
+  width: 5%;
+  font-size: 3px;
+  display: block;
+  margin: 4px auto;
+}
+
+.about .row{
+	border: 1px solid var(--black);
+	margin-top: 50px;
+	padding: 0px;
+	box-sizing: border-box;
+	background-color: rgba(60, 60, 60, 0.33);
+}
+
+.about .row img{
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+
+.about h3{
+	padding: 10px;
+	padding-left: 0px;
+	margin-top: 25px;
+}
+
+.about .underline{
+  content: '';
+  border: 1px solid var(--white);
+  width: 100%;
+  font-size: 3px;
+  display: block;
+  margin: 0px auto;
+}
+
+.about p{
+	margin-top: 20px;
+	font-weight: 600;
+	font-size: 15px;
+	box-sizing: border-box;
+	text-align: justify;
+	color: var(--brown);
+}
+
+/* Menu */
+.menu{
+	width: auto;
+	height: 100vh;
+	padding-top: 60px;
+}
+
+.menu h1{
+	padding: 25px;
+	padding-bottom: 0px;
+	text-align: center;
+	font-family: serif;
+	font-weight: 600;
+	letter-spacing: 3px;
+	font-size: 33px;
+}
+
+.menu #heading.underline{
+  content: '';
+  border: 1px solid var(--white);
+  width: 15%;
+  font-size: 3px;
+  display: block;
+  margin: 0px auto;
+}
+
+.menu .underline2{
+  content: '';
+  border: 1px solid var(--brown);
+  width: 5%;
+  font-size: 3px;
+  display: block;
+  margin: 4px auto;
+}
+
+.menu h6{
+	text-align: center;
+}
+
+.menu #menu-info{
+	margin-top: 6.5rem;
+	box-sizing: border-box;
+}
+
+.menu .table{
+	color: var(--white);
+}
+
+.menu .table td{
+	color: var(--brown);
+}
+
+.menu .table .underline{ /* giveing same access to every underline class inside table class */
+  content: '';
+  border: 1px dashed var(--white);
+  font-size: 3px;
+  display: block;	
+}
+.menu .table #coffee{
+  position: relative;
+  top: -8px;
+  left: 4rem;
+  width: 88%;	
+}
+
+.menu .table #hot-choco{
+  position: relative;
+  top: -8px;
+  left: 6.5rem;
+  width: 67%;	
+}
+
+.menu .table #coffee{
+  position: relative;
+  top: -8px;
+  left: 3rem;
+  width: 87%;	
+}
+
+.menu .table #cold-coffee{
+  position: relative;
+  top: -8px;
+  left: 5.4rem;
+  width: 73%;	
+}
+
+.menu .table #espresso{
+  position: relative;
+  top: -8px;
+  left: 3.9rem;
+  width: 82%;	
+}
+
+.menu #menu-info img{
+	transition: 0.4s ease-in-out;
+	filter: grayscale(80%);
+}
+
+.menu #menu-info img:hover{
+	filter: grayscale(0%);
+	cursor: pointer;
+}
+
+/* Products */
+.product{
+	width: auto;
+	height: 100vh;
+	padding-top: 60px;
+}
+
+.product h1{
+	padding: 25px;
+	padding-bottom: 0px;
+	text-align: center;
+	font-family: serif;
+	font-weight: 600;
+	letter-spacing: 3px;
+	font-size: 33px;
+}
+
+.product #heading.underline{
+  content: '';
+  border: 1px solid var(--white);
+  width: 15%;
+  font-size: 3px;
+  display: block;
+  margin: 0px auto;
+}
+
+.product .underline2{
+  content: '';
+  border: 1px solid var(--brown);
+  width: 5%;
+  font-size: 3px;
+  display: block;
+  margin: 4px auto;
+}
+
+.product h6{
+	text-align: center;
+}
+
+.product #product-card{
+	margin-top: 5rem;
+	color: var(--black);
+}
+
+.product .card{
+	width: auto;
+	height: auto;
+	border: 1px solid var(--white);
+	background-color: transparent;
+	transition: 0.5s ease-in-out;
+}
+
+.product .card:hover{ /* using pesudo class and transform property value as translateY() */
+	transform: translateY(-20px);
+}
+
+.product figure{
+	overflow: hidden;
+	margin: 0px;
+}
+
+.product .card img{
+	display: block;
+	width: 100%;
+	object-fit: cover;
+	height: 16rem;
+	margin-left: auto;
+	margin-right: auto;
+	filter: grayscale(80%);
+}
+
+.product #zoom-in img{
+	transform: scale(1);
+	transition: 0.5s ease-in-out;
+}
+
+.product #zoom-in:hover img{
+    filter: grayscale(0%);
+	transform: scale(1.05);
+}
+
+.product .card-title{
+	color: var(--brown);
+	background: var(--white);
+	margin-bottom: 0px;
+	padding: 8px;
+	text-align: center;
+}
+
+/* Blogs */
+.blogs{
+	width: auto;
+	height: auto;
+}
+
+.blogs h1{
+	padding: 25px;
+	padding-bottom: 0px;
+	text-align: center;
+	font-family: serif;
+	font-weight: 600;
+	letter-spacing: 3px;
+	font-size: 33px;
+}
+
+.blogs #heading.underline{
+  content: '';
+  border: 1px solid var(--white);
+  width: 15%;
+  font-size: 3px;
+  display: block;
+  margin: 0px auto;
+}
+
+.blogs .underline2{
+  content: '';
+  border: 1px solid var(--brown);
+  width: 5%;
+  font-size: 3px;
+  display: block;
+  margin: 4px auto;
+}
+
+.blogs details{
+	margin-top: 5rem;
+}
+
+.blogs p[class~=Lorem]{ /* attribute selector */
+	margin-top: 25px;
+	padding: 10px;
+	border-left: 5px solid var(--white);
+	background-color: var(--mainTheme);
+}
+
+.blogs p::selection{
+	background-color: var(--white);
+	color: var(--black);
+}
+
+.blogs a{
+	width: 10%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	transition: 0.5s ease-in-out;
+}
+
+/* All Demo page */
+.demo{
+	width: auto;
+	height: auto; /* make it auto otherwise sticky navbar will not work */
+	padding: 25px;
+}
+
+.demo h5{
+	font-size: 13px;
+	letter-spacing: 1px;
+	font-style: italic;
+	color: var(--comment);
+}
+
+.demo p{
+	margin: 0;
+}
+
+.demo p[class="coffee"]{
+	color: red;
+}
+
+.demo p[title~="coppuccino"]{
+	color: var(--brown);
+}
+
+.demo .orange{
+	position: relative;
+	z-index: 1;
+	width: 6cm;
+	height: 3cm;
+	background-color: var(--orange);
+	padding: 10px;
+	margin-top: 1rem;
+}
+
+.demo .white{
+	position: absolute;
+	left: 2cm;
+	bottom: -4.8cm;
+	z-index: 1;
+	width: 6cm;
+	height: 3cm;
+	background-color: var(--white);
+	color: var(--black);
+	padding: 10px;
+	margin-top: 2rem;
+}
+
+.demo .green{
+	position: absolute;
+	z-index: 3;
+	left: 3cm;
+	bottom: -6cm;
+	width: 6cm;
+	height: 3cm;
+	background-color: var(--green);
+	padding: 10px;
+	margin-top: 2rem;
+}
+
+.demo #overflow{
+	width: 50%;
+	height: 20%;
+	text-align: justify;
+	background-color: var(--mainTheme);
+	padding: 10px;
+	overflow: scroll;
+	overflow-x: hidden;
+}
+
+.demo #pesudo-element{
+	width: 50%;
+	text-align: justify;
+}
+
+.demo #pesudo-element::first-line{
+	color: var(--orange);
+}
+
+
+.demo .dropdown-image > img{
+	margin: 10px;
+}
+.demo .dropdown-image{
+  position: relative;
+  display: inline-flex;
+}
+
+.demo .dropdown-content{
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+
+.demo .dropdown-image:hover .dropdown-content{
+  display: block;
+  top: 4.5cm;
+  left: 12px;
+}
+
+.demo .caption{
+  font-size: 16px;
+  padding: 10px;
+  text-align: center;
+  background-color: var(--white);
+  color: var(--black);
+}
+
+.demo #text-overflow{
+	white-space: nowrap;
+	padding: 10px;
+	width: 15cm;
+	border: 2px solid var(--mainTheme);
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.demo #book-cover{
+	margin-top: 1cm;
+	margin-right: 0px;
+	width: 3cm;
+	height: 7cm;
+	display: inline-block;
+	padding: 10px;
+	background-color: var(--comment);
+	transform: skewY(-160deg);
+	border: 2px solid var(--white);
+}
+
+.demo #book{
+	width: 4.5cm;
+	height: 7cm;
+	display: inline-block;
+	position: relative;
+	top: 20px;
+	margin-left: 0px;
+	padding: 10px;
+	background-color: var(--comment);
+	transform: skewY(0deg);
+	border: 2px solid var(--white);
+
+}
+
+/* Footer */
+.footer{
+	overflow-x: hidden;
+}
+
+.footer .logo a{
+	color: var(--white);
+	padding-left: 25px;
+	font-variant: small-caps;
+	font-size: 25px;
+	transition: 0.5s ease-in-out;
+}
+
+.footer .logo a:hover{
+	color: var(--brown);
+}
+
+.footer .logo i{
+	position: relative;
+	top: -18px;
+	color: var(--mainTheme);
+	font-size: 20px;
+	transform: rotate(20deg);
+}
+
+.footer .logo h6{
+	font-style: italic;
+	letter-spacing: 1px;
+	font-size: 13px;
+	margin-top: 15px;
+	margin-left: 45px;
+}
+
+.footer a.btn{
+	margin-top: 0px;
+	margin-left: 45px;
+}
+
+.footer .social-media{
+	float: right;
+	position: relative;
+	right: 12px;
+	display: inline-block;
+	font-size: 20px;
+}
+
+/* copyright */
+.copyright{
+	box-sizing: border-box;
+	letter-spacing: 1px;
+	background-color: #111;
+	font-size: 13px;
+	padding: 8px;
+	overflow-x: hidden;
+}
+
+.copyright span{
+	font-weight: 600;
+	color: var(--brown);
+}
