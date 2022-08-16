@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Coffee Shop</title>
+
+	<!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    <link href='https://fonts.googleapis.com/css?family=Itim' rel='stylesheet'>
+</head>
+<body>
+	<section class="main-logo">
+		<div class="center">
+			<img src="assets/img/coffee.png">
+			<p style="margin: 0px; padding: 0px; text-align: center; font-style: italic; padding-bottom: 10px; letter-spacing: 1px;">Starbucks Coffee Shop<br><span style="font-size: 12px; letter-spacing: 2px; color: #b4622a; font-weight: 600;">Ahmedabad</span></p>	
+		</div>
+	</section>
+
+	<header class="navbar" id="home">
+		<div class="navbar">
+			<div class="logo">
+				<a href="index.html">
+					Coffee Shop<i class="fa-solid fa-mug-hot"></i> 	
+				</a>	
+			</div> 
+			<ul class="nav-link">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#menu">Menu</a></li>
+				<li><a href="#product">Products</a></li>
+				<li><a href="#blogs">Blogs</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</div>	
+	</header>
+
+	<!-- Social -->
+	<section class="social-menu">
+		<div class="social-menu">
+			<ul>
+				<li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li><span class="underline"></span>
+				<li><a href=""><i class="fa-brands fa-instagram"></i></a></li><span class="underline"></span>
+				<li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+			</ul>
+		</div>
+	</section>
+
+	<!-- Intro Section -->
+	<section id="intro" class="intro img-fluid"  style="background: url(assets/img/background.jpg); background-repeat: no-repeat; background-size: cover;">
+		<div class="center">
+			<h1>Welcome to <span>Coffee Shop</span></h1>
+			<p class="text-center">"Life Begins after Coffee"</p>
+		</div>
+	</section>
+
+	<!-- About Us -->
+	<section class="about container" id="about">
+		<h1><span style="color: #905126;">ABOUT</span> US</h1><span class="underline" id="heading"></span><span class="underline2"></span>
+
+		<div class="row">
+			<div class="col-lg-6 col-xs-6" style="padding: 0px;">
+				<img src="assets/img/about.jpg" class="img-fluid">
+			</div>
+			<div class="col-lg-6 col-xs-6">
+				<h3>What Makes our <span style="color: #b4622a; font-variant: small-caps;">Coffee Special</span> ?</h3><span class="underline"></span>
+				<p>
+					The Coffee Shop has become a daily necessity for local coffee fans. Students and faculty of the University of Tennessee and all of Knoxville can escape to a comfortable place to meet friends and colleagues to study, socialize, read a book and have a great cup of coffee and espresso.<br><br>
+					With the growing demand for high-quality gourmet coffee and great service, The Coffee Shop has captured and will continue to capture its core group of repeat coffee lovers.<br><br>
+
+					In addition to our walk-in patrons, we roast, package & distribute to local Knoxville businesses and the surrounding East TN area.  Come to one of our coffee shops or visit one of our coffee partners and indulge your taste buds with our coffee sourced from the most tasty beans on earth, selected for a great mixture of fresh and exotic taste!
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- Menu -->
+	<section class="menu container" id="menu">
+		<h1><span style="color: #905126;">OUR</span> MENU</h1><span class="underline" id="heading"></span><span class="underline2"></span>
+
+		<div class="row container" id="menu-info">
+			<div class="col-lg-5">
+				<h6>Menu</h6>
+				<table class="table table-borderless">
+					<tr>
+						<th>Coffee</th>
+						<th>Price</th>
+					</tr>
+					<tr>
+						<td>Coffee<span class="underline" id="coffee"></td>
+						<td><i class="fa-solid fa-indian-rupee-sign"></i> 15</td>
+					</tr>
+					<tr>
+						<td>Hot Chocolate<span class="underline" id="hot-choco"></td>
+						<td><i class="fa-solid fa-indian-rupee-sign"></i> 20</td>
+					</tr>
+					<tr>
+						<td>Cold Coffee<span class="underline" id="cold-coffee"></td>
+						<td><i class="fa-solid fa-indian-rupee-sign"></i> 20</td>
+					</tr>
+					<tr>
+						<td>Coppuccino<span class="underline" id="cold-coffee"></td>
+						<td><i class="fa-solid fa-indian-rupee-sign"></i> 35</td>
+					</tr>
+					<tr>
+						<td>Espresso<span class="underline" id="espresso"></td>
+						<td><i class="fa-solid fa-indian-rupee-sign"></i> 35</td>
+					</tr>
+				</table>
+			</div>
+			<div class="col-lg-7">
+				<div class="row">
+					<div class="col-lg-6 row">
+						<div class="row">
+							<img src="assets/img/menu/coppuccino.jpg" class="img-fluid" title="Coppuccino">
+						</div>
+						<div class="row mt-3">
+							<img src="assets/img/menu/hot-choco.jpg" class="img-fluid" title="Hot Chocolate">
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<img src="assets/img/menu/cold-coffee.jpg" class="img-fluid" title="Cold Coffee Milkshake">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Product -->
+	<section class="product container" id="product">
+		<h1><span style="color: #905126;">OUR</span> PRODUCTS</h1><span class="underline" id="heading"></span><span class="underline2"></span>
+
+		<div class="row" id="product-card">
+		  <div class="col-lg-3">
+		    <div class="card" id="zoom-in">
+		    	<!-- It is neccessary to take figure as a container otherwise it will overlap -->
+		    	<figure> 
+		    		<img src="assets/img/products/black-roast.jpg" class="card-img-top img-fluid" alt="...">		
+		    	</figure>
+		      
+		      <h5 class="card-title">Nescafe Coffee</h5>
+		    </div>
+		  </div>
+		  <div class="col-lg-3">
+		    <div class="card" id="zoom-in">
+		    	<figure>
+		    		<img src="assets/img/products/harsley.jpg" class="card-img-top img-fluid" alt="...">		
+		    	</figure>
+		      
+		      <h5 class="card-title">Hershey's Milkshake</h5>
+		    </div>
+		  </div>
+		  <div class="col-lg-3">
+		    <div class="card" id="zoom-in">
+		    	<figure>
+		    		<img src="assets/img/products/espresso.jpg" class="card-img-top img-fluid" alt="...">		
+		    	</figure>
+		      
+		      <h5 class="card-title">Espresso Coffee</h5>
+		    </div>
+		  </div>
+		  <div class="col-lg-3">
+		    <div class="card" id="zoom-in">
+		    	<figure>
+		    		<img src="assets/img/products/starbuck.jpg" class="card-img-top img-fluid" alt="...">		
+		    	</figure>
+		      
+		      <h5 class="card-title">Starbucks Coffee</h5>
+		    </div>
+		  </div>
+		</div>
+	</section>
+
+	<!-- Blogs -->
+	<section class="blogs" id="blogs">
+		<h1><span style="color: #905126;">OUR</span> BLOGS</h1><span class="underline" id="heading"></span><span class="underline2"></span>
+
+		<div class="container demo">
+			<details>
+				<summary>Css Attribute Selector</summary>
+				<p class="Lorem">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>
+			</details>
+
+			<a href="all-demo.html" target="_blank" class="btn btn-sm btn-outline-light">Explore More</a>
+		</div>
+	</section>
+
+	<!-- Footer -->
+	<footer class="footer" id="footer" style="background-color: #222; padding: 10px;">
+		<div class="row">
+			<div class="col-lg-9 logo">
+				<a href="index.html">
+					Coffee Shop<i class="fa-solid fa-mug-hot"></i> 	
+				</a>	
+				<h6>Get in Touch...</h6>
+			</div> 
+
+			<div class="col-lg-3 my-3 social-media">
+				<h6>Connect us on</h6>
+				<i class="fa-brands fa-square-facebook"></i>
+				<i class="fa-brands fa-instagram"></i>
+				<i class="fa-brands fa-youtube"></i>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Copyrigt -->
+	<section class="copyright">
+		<div class="row">
+			<div class="col-lg-10">
+				<p>Copright <span>Coffee Shop</span> &copy; 2022, All rights reserved.</p>		
+			</div>
+			<div class="col-lg-2">
+				<p>Designed by <a href="http://github.com/dhruvparmar2310/" id="Dhruv" target="_blank"><span>Dhruv Parmar</span></a></p>
+			</div>
+		</div>
+		
+	</section>
+</body>
+</html>

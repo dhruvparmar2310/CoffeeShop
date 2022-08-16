@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>All Demo's</title>
+
+	<!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    <link href='https://fonts.googleapis.com/css?family=Itim' rel='stylesheet'>
+</head>
+<body>
+	<section class="main-logo">
+		<div class="center">
+			<img src="assets/img/coffee.png">
+			<p style="margin: 0px; padding: 0px; text-align: center; font-style: italic; padding-bottom: 10px; letter-spacing: 1px;">Starbucks Coffee Shop<br><span style="font-size: 12px; letter-spacing: 2px; color: #b4622a; font-weight: 600;">Ahmedabad</span></p>	
+		</div>
+	</section>
+
+	<header class="navbar" id="home">
+		<div class="navbar">
+			<div class="logo">
+				<a href="index.html">
+					Coffee Shop<i class="fa-solid fa-mug-hot"></i> 	
+				</a>	
+			</div> 
+			<ul class="nav-link">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#menu">Menu</a></li>
+				<li><a href="#product">Products</a></li>
+				<li><a href="#blogs">Blogs</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</div>	
+	</header>
+
+	<!-- All Demo's -->
+	<section class="demo">
+		<div class="demo">
+			<h5>// demo of [attribute="value"], here I have used p[class="coffee"]</h5>
+			<h5>// it is used to find exact attribute's value</h5>
+			<p class="coffee">Coffee</p>
+			<p>Coppuccino</p>
+
+			<br>
+			<h5>// demo of [attribute~="value"], here I have used p[title~="coppuccino"]</h5>
+			<h5>// it is used to find specific value</h5>
+			<p class="coffee" title="coffee">Coffee</p>
+			<p class="coffee" title="coppuccino">Coppuccino</p>
+
+			<br>
+			<h5>// its new thing which I learnt, [and-symbol]lt is used to print "<" and [and-symbol]gt is used to print ">"</h5>
+			<p>For example : &ltp&gtDhruv&lt/p&gt</p>
+
+			<br>
+			<h5>// demo of z-index, z-index is used to send anything back or to bring anything forward.</h5>
+			<div class="orange">Saffron (z-index: 1)</div>
+			<div class="green">Green (z-index: 3)</div>
+			<div class="white">White (z-index: 2)</div>
+
+			<br><br><br><br><br>
+			<h5>// demo of overflow, overflow has four properties auto, visible, hidden, scroll. I have used scroll and overflow-x to be hidden.</h5>
+			<p id="overflow">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</p>
+
+			<br><br>
+			<h5>// demo of pesudo-element. I have used ::selection in website and I have using ::first-line here.</h5>
+			<p id="pesudo-element">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</p>
+
+			<br><br>
+			<h5>// demo of dropdown Image</h5>
+			<div class="dropdown-image">
+			  <img src="assets/img/products/starbuck.jpg" alt="Starbucks Coffee" width="200">
+			  
+			  <div class="dropdown-content">
+			  	<img src="assets/img/products/starbuck.jpg" alt="Starbucks Coffee" width="500">
+			  <div class="caption">Starbucks Cold Coffee</div>
+			  
+			  </div>
+			</div>
+
+			<br>
+			<h5>// demo of text-overflow</h5>
+			<p id="text-overflow">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</p>
+
+			<br>
+			<h5>// demo of 2D transition, using skewY()</h5>
+			<span id="book-cover">Cover</span>
+			<span id="book">Book</span>
+		</div>
+	</section>
+</body>
+</html>
